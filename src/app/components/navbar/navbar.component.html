@@ -1,0 +1,65 @@
+<div class="staticupbar">
+<div >
+  <span class="d-block">
+       <div class="d-inline ">
+        <div class="d-inline float-left bg-transparent">
+            <button mat-raised-button class="btn btn-just-icon btn-white btn-fab btn-round navbar-toggler" type="button" (click)="sidebarToggle()"> 
+              <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+              <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+            </button>
+        </div>
+      </div>
+      
+    
+      </span>
+      <span class="d-block">
+        <div class="d-inline text-right ">
+          <label class="text-sm-right">
+          <!--{{date   | date: "dd/MM/yyyy"}-->
+          <!--{{date   | date: "HH:mm:ss"}}-->
+         {{getLocalizacaoUsuario()}}
+        </label>
+          <i class="material-icons">person</i>
+         
+          </div>
+      </span>
+      
+      <span class="d-block">
+        <div class="d-inline">
+        <label class="navbar-brand text-sm-left float-left text-success">{{getTitle()}}</label>
+        </div>
+
+        <!--<div class="d-inline ">
+          <button class="btn btn-sm btn-round-sm btn-success mdc-button--icon-leading" *ngIf="exibirBotaoPesquisar()">
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">search</i>
+            <span class="mdc-button__label"> Pesquisar</span>
+          </button>
+          <button class="btn btn-sm btn-round btn-success mdc-button--icon-leading" *ngIf="exibirBotaoGravar()">
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">done</i>
+            <span class="mdc-button__label"> Gravar</span>
+          </button>
+          <button class="btn btn-sm  btn-round btn-success mdc-button--icon-leading">
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">insert_drive_file</i>
+            <span class="mdc-button__label"> Novo</span>
+          </button>
+          <button class="btn btn-sm  btn-round btn-success mdc-button--icon-leading">
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">exit_to_app</i>
+            <span class="mdc-button__label"> Sair</span>
+          </button>
+          <button class="btn btn-sm  btn-round btn-success mdc-button--icon-leading">
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">done_all</i>
+            <span class="mdc-button__label"> Finalizar</span>
+          </button>
+    
+      
+          </div>-->
+      
+      </span>
+   
+    </div>
+  </div>

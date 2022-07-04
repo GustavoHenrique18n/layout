@@ -1,0 +1,114 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">  
+                <div class="card">
+                    <div class="card-header card-header-success">
+                        <h4 class="card-title">Cadastro</h4>
+                        <p class="card-category">Preencha as informações</p>
+                    </div> 
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <mat-accordion class="example-headers-align">
+                                    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                                      <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                          Identificação do fiscalizado
+                                        </mat-panel-title>
+                                      </mat-expansion-panel-header>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>First name</mat-label>
+                                        <input matInput>
+                                      </mat-form-field>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Age</mat-label>
+                                        <input matInput type="number" min="1">
+                                      </mat-form-field>
+                                      <mat-action-row>
+                                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                                      </mat-action-row>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                                      <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                          Descrição da ação
+                                        </mat-panel-title>
+                                      </mat-expansion-panel-header>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>First name</mat-label>
+                                        <input matInput>
+                                      </mat-form-field>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Age</mat-label>
+                                        <input matInput type="number" min="1">
+                                      </mat-form-field>
+                                      <mat-action-row>
+                                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                                      </mat-action-row>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                                      <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                          Descrição do Produto Agrícola
+                                        </mat-panel-title>
+                                      </mat-expansion-panel-header>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>First name</mat-label>
+                                        <input matInput>
+                                      </mat-form-field>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Age</mat-label>
+                                        <input matInput type="number" min="1">
+                                      </mat-form-field>
+                                      <mat-action-row>
+                                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                                      </mat-action-row>
+                                    </mat-expansion-panel>
+                                    <mat-expansion-panel [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+                                      <mat-expansion-panel-header>
+                                        <mat-panel-title>
+                                          Identificação dos envolvidos
+                                        </mat-panel-title>
+                                      </mat-expansion-panel-header>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>First name</mat-label>
+                                        <input matInput>
+                                      </mat-form-field>
+                                  
+                                      <mat-form-field appearance="fill">
+                                        <mat-label>Age</mat-label>
+                                        <input matInput type="number" min="1">
+                                      </mat-form-field>
+                                      <mat-action-row>
+                                        <button mat-button color="primary" (click)="nextStep()">END</button>
+                                      </mat-action-row>
+                                    </mat-expansion-panel>
+                                  </mat-accordion>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <button class="btn btn-sm btn-round btn-success mdc-button--icon-leading">
+                                <span class="mdc-button__ripple"></span>
+                                <i class="material-icons mdc-button__icon" aria-hidden="true">done</i>
+                                <span class="mdc-button__label"> Gravar</span>
+                              </button>
+                          </div>
+                            
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  

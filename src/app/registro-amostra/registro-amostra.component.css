@@ -1,0 +1,16 @@
+mat-expansion-panel.mat-expansion-panel {
+  margin: 10px 0 10px 0;
+}
+
+.wrapper_buttons{
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+}
+.wrapper_inputs_fields{
+  width: 100%;
+  border: 1px solid #cbcbcb;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px 0px
+}
